@@ -1,7 +1,7 @@
 # execute time: 2020/08/15 20:09:05
 Pod::Spec.new do |s|
   s.name             = 'MMCodable'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'MMCodable: A enhanced Codable'
 
   s.description      = <<-DESC
