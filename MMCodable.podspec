@@ -8,10 +8,10 @@ Pod::Spec.new do |s|
 基于苹果官方Codable的序列化工具库
                        DESC
 
-  s.homepage         = 'https://github.com/LinXunFeng/MMCodable'
+  s.homepage         = 'https://github.com/MoyaMapper/MMCodable'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'LinXunFeng' => 'linxunfeng@yeah.net' }
-  s.source           = { :git => 'https://github.com/LinXunFeng/MMCodable.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/MoyaMapper/MMCodable.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/xunfenghellolo'
 
   s.ios.deployment_target = '8.0'
