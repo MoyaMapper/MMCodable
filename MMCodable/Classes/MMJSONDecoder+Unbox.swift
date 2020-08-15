@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreGraphics
 import SwiftyJSON
 
 // MARK: - Concrete Value Representations
