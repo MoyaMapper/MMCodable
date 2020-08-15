@@ -1,4 +1,4 @@
-# execute time: 2020/08/15 18:17:40
+# execute time: 2020/08/15 18:24:45
 Pod::Spec.new do |s|
   s.name             = 'MMCodable'
   s.version          = '0.0.1'
