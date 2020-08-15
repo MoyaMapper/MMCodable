@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		013FD20A0FD51190E8CE1130 /* Pods_MMCodable_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 671B62584E11ED98E1D2920A /* Pods_MMCodable_Example.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		7F9E164039F5B0BBFD17B7F3 /* Pods_MMCodable_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790D8D03DF843CEEA29A235B /* Pods_MMCodable_Tests.framework */; };
 		FD443F3F24E7AAE9005EFAAD /* AModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD443F3B24E7AABF005EFAAD /* AModel.swift */; };
 		FD443F4024E7AAE9005EFAAD /* BModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD443F3C24E7AABF005EFAAD /* BModel.swift */; };
 		FD443F4224E7B7F0005EFAAD /* CModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD443F4124E7B7F0005EFAAD /* CModel.swift */; };
@@ -43,6 +41,9 @@
 		FD44400524E7C6DF005EFAAD /* MMJSONUnkeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD443FF424E7C6DF005EFAAD /* MMJSONUnkeyedEncodingContainer.swift */; };
 		FD44400924E7C991005EFAAD /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD44400824E7C991005EFAAD /* SwiftyJSON.framework */; };
 		FD44400A24E7C992005EFAAD /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD44400824E7C991005EFAAD /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD44400B24E7CC00005EFAAD /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD44400824E7C991005EFAAD /* SwiftyJSON.framework */; };
+		FD44400C24E7D809005EFAAD /* MMCodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD443FD824E7C667005EFAAD /* MMCodable.framework */; };
+		FD44400D24E7D82C005EFAAD /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD44400824E7C991005EFAAD /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,7 +131,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				013FD20A0FD51190E8CE1130 /* Pods_MMCodable_Example.framework in Frameworks */,
 				FD443FDF24E7C668005EFAAD /* MMCodable.framework in Frameworks */,
 				FD44400924E7C991005EFAAD /* SwiftyJSON.framework in Frameworks */,
 			);
@@ -140,7 +140,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F9E164039F5B0BBFD17B7F3 /* Pods_MMCodable_Tests.framework in Frameworks */,
+				FD44400D24E7D82C005EFAAD /* SwiftyJSON.framework in Frameworks */,
+				FD44400C24E7D809005EFAAD /* MMCodable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD44400B24E7CC00005EFAAD /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,11 +331,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "MMCodable_Example" */;
 			buildPhases = (
-				A70A394D2ECEB4575A89D5EC /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				A125FD286A2E2CDC94B1B4BE /* [CP] Embed Pods Frameworks */,
 				FD443F5424E7BBCA005EFAAD /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -350,7 +350,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "MMCodable_Tests" */;
 			buildPhases = (
-				C344F9B29F6C18F0D4BC45E1 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
@@ -458,73 +457,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A125FD286A2E2CDC94B1B4BE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MMCodable_Example/Pods-MMCodable_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MMCodable/MMCodable.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMCodable.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMCodable_Example/Pods-MMCodable_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A70A394D2ECEB4575A89D5EC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MMCodable_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C344F9B29F6C18F0D4BC45E1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MMCodable_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		607FACCC1AFB9204008FA782 /* Sources */ = {
@@ -764,6 +696,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -787,6 +720,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -814,6 +748,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = MMCodable/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -848,6 +786,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = MMCodable/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
