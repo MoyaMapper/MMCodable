@@ -1,0 +1,6 @@
+framework module MMCodable {
+  umbrella header "MMCodable-umbrella.h"
+
+  export *
+  module * { export * }
+}

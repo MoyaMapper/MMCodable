@@ -1,0 +1,23 @@
+PODS:
+  - MMCodable (0.0.1):
+    - SwiftyJSON
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - MMCodable (from `./`)
+
+SPEC REPOS:
+  trunk:
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  MMCodable:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  MMCodable: 107155ae74554bfee92c306ea3bb41b85cf01bb4
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 2d753daa8d0d91241e36ad9c6d65f37a50744499
+
+COCOAPODS: 1.9.1
